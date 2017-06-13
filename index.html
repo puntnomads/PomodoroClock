@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <h1>Pomodoro Timer</h1>
+<h3>Your new favorite productivity hack.</h3>
+<h3>A description of what a Pomodoro is can be found at <a href="pomodorotechnique.com/get-started/">here</a></h3>
+<div>
+<div class="pomodoro">
+<h2>Set Pomodoro</h2>
+<input type="text" id="pomodoroTime" value="25:00"/>
+<div>  
+<button onclick="incrementPomodoroTime()" class="plus">+</button>
+<button onclick="decrementPomodoroTime()" class="minus">-</button>
+</div>  
+</div>
+<div class="break">
+<h2>Set Break</h2>
+<input type="text" id="breakTime" value="5:00"/>
+<div>  
+<button onclick="incrementBreakTime()" class="plus">+</button>
+<button onclick="decrementBreakTime()" class="minus">-</button>
+</div>  
+</div>
+</div>
+
+<div class="timer">
+<h2>Timer</h2>
+<input type="text" id="timerTime" value="25:00"/>
+<div>  
+<button onclick="startTimer()" class="start">Start</button>
+<button onclick="pauseTimer()" class="pause">Pause</button>
+<button onclick="resetTimer()" class="reset">Reset</button>
+</div>  
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
